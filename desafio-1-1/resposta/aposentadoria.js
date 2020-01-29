@@ -5,23 +5,16 @@ const contribuicao = 23; // em anos
 
 const tempoContribuicao = idade + contribuicao; // 71
 
-// Homem para se aposentar precisa de no mínimo 35 anos de contribuição
-// Mulher para se aposentar precisa de no mínimo 30 anos de contribuição
-
-let message;
+let podeAposentar = false;
 
 if (sexo === 'F') {
-    if (contribuicao >= 30 || tempoContribuicao >= 85) {
-        message = `${nome}, você pode se aposentar!`;
-    } else {
-        message = `${nome}, você ainda não pode se aposentar!`;
-    }
+    podeAposentar = contribuicao >= 30 || tempoContribuicao >= 85;
 } else {
-    if (contribuicao >= 35 || tempoContribuicao >= 95) {
-        message = `${nome}, você pode se aposentar!`;
-    } else {
-        message = `${nome}, você ainda não pode se aposentar!`;
-    }
+    podeAposentar = contribuicao >= 35 || tempoContribuicao >= 95;
 }
+
+const message = podeAposentar
+    ? `${nome}, você pode se aposentar!`
+    : `${nome}, você ainda não pode se aposentar!`;
 
 console.log(message);
