@@ -26,7 +26,7 @@ const usuarios = [
 usuarios.forEach((usuario) => {
     const saldoTotal = calculaSaldo(usuario.receitas, usuario.despesas);
     const situacaoSaldo = saldoTotal >= 0 ? 'POSITIVO' : 'NEGATIVO';
-    console.log(`${usuario.nome} possui saldo ${situacaoSaldo} de ${saldoTotal}`);
+    console.log(`${usuario.nome} possui saldo ${situacaoSaldo} de ${saldoTotal.toFixed(2)}`);
 });
 
 function calculaSaldo(receitas, despesas) {
