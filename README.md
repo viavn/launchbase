@@ -18,7 +18,7 @@
 - [x] [Primeiros passos com JavaScript](./desafio-1-1/01-1-primeiros-passos-com-js.md)
 - [x] [Lidando com objetos e vetores](./desafio-1-2/01-2-lidando-com-objetos-e-vetores.md)
 - [x] [Funções e estruturas de repetição](./desafio-1-3/01-3-funcoes-e-estruturas-de-repeticao.md)
-- [ ] [Aplicação: Operações bancárias](01-4-aplicacao-operacoes-bancarias.md)
+- [ ] [Aplicação: Operações bancárias](./desafio-1-4/01-4-aplicacao-operacoes-bancarias.md)
 
 ## 📝 Licença
 
