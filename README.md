@@ -13,9 +13,7 @@
   <a href="#-licença">Licença</a>
 </p>
 
-## 🚀 Desafios
-
-## 1
+## 🚀 Desafios Módulo 1
 
 - [x] [Primeiros passos com JavaScript](./desafio-1/desafio-1-1/01-1-primeiros-passos-com-js.md)
 - [x] [Lidando com objetos e vetores](./desafio-1/desafio-1-2/01-2-lidando-com-objetos-e-vetores.md)
