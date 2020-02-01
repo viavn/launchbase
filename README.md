@@ -19,7 +19,8 @@
 
 ## 🚀 Desafios Módulo 2
 
-- [ ] [Primeiro HTML](./modulo-02/desafios/desafio-1/02-1-primeiro-html.md)
+- [x] [Primeiro HTML](./modulo-02/desafios/02-1-primeiro-html.md)
+- [x] [Página de descrição](./modulo-02/desafios/02-2-pagina-descricao.md)
 
 ## 📝 Licença
 
