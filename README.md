@@ -19,7 +19,7 @@
 
 ## 🚀 Desafios Módulo 2
 
-- [] [Primeiro HTML](./modulo-02/desafios/desafio-1/02-1-primeiro-html.md)
+- [ ] [Primeiro HTML](./modulo-02/desafios/desafio-1/02-1-primeiro-html.md)
 
 ## 📝 Licença
 
