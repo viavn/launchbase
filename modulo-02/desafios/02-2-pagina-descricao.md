@@ -6,7 +6,7 @@
   Desafio 2-2: Página de descrição
 </h3>
 
-<blockquote align="center">“Quanto mais você estuda, mais aprende e se aproxima de realizar seu sonhos!”</blockquote>
+<blockquote>“Quanto mais você estuda, mais aprende e se aproxima de realizar seu sonhos!”</blockquote>
 
 <p align="center">
 
