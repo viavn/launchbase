@@ -22,6 +22,7 @@
 - [x] [Primeiro HTML](./modulo-02/desafios/02-1-primeiro-html.md)
 - [x] [Página de descrição](./modulo-02/desafios/02-2-pagina-descricao.md)
 - [x] [Página de cursos e iframe](./modulo-02/desafios/02-3-pagina-cursos-e-iframe.md)
+- [ ] [Foodfy](./modulo-02/desafios/01-foodfy.md)
 
 ## 📝 Licença
 

@@ -1,0 +1,66 @@
+@import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+  background: white;
+  font-family: "Roboto", sans-serif;
+  width: 940px;
+  margin: 0 auto;
+}
+
+nav .menu {
+  padding: 36px 0;
+  display: grid;
+  grid-template-columns: 213px 42px 62px;
+  grid-column-gap: 30px;
+  align-items: center;
+}
+
+nav .menu a {
+  color: black;
+  font-size: 16px;
+  line-height: 19px;
+  text-decoration: none;
+}
+
+.wrapper {
+  height: 366px;
+  width: 940px;
+  background: #fbdfdb;
+  margin: 0 auto;
+  border-radius: 30px;
+}
+
+.recipes__title {
+  padding-top: 117px;
+  padding-left: 60px;
+  width: 316px;
+}
+
+.wrapper .best__recipes .recipes__title h1 {
+  width: 305px;
+  font-size: 32px;
+  color: #111111;
+}
+
+.wrapper .best__recipes .recipes__title p {
+  margin-top: 10px;
+  opacity: 0.7;
+  font-size: 18px;
+  color: #000000;
+  line-height: 28px;
+  height: 84px;
+}
+
+.wrapper .best__recipes img {
+  width: 216px;
+  height: 300px;
+  position: fixed;
+  margin: 66px 100px 0 624px;
+  top: 103px;
+}
