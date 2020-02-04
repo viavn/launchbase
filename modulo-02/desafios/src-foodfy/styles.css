@@ -1,5 +1,10 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
 
+:root {
+  --color-footer: #eeeeee;
+  --text-color: #111111;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +14,9 @@
 body {
   background: white;
   font-family: "Roboto", sans-serif;
-  width: 940px;
-  margin: 0 auto;
 }
+
+/* === MENU === */
 
 nav .menu {
   padding: 36px 0;
@@ -19,6 +24,8 @@ nav .menu {
   grid-template-columns: 213px 42px 62px;
   grid-column-gap: 30px;
   align-items: center;
+  width: 940px;
+  margin: 0 auto;
 }
 
 nav .menu a {
@@ -28,9 +35,18 @@ nav .menu a {
   text-decoration: none;
 }
 
+.active-link {
+  font-weight: bold;
+}
+
+/* === CONTEUDO === */
+
 .wrapper {
+  width: 940px;
   margin: 0 auto;
 }
+
+/* === BANNER === */
 
 .best__recipes-banner {
   height: 366px;
@@ -45,13 +61,13 @@ nav .menu a {
   width: 316px;
 }
 
-.wrapper .best__recipes-banner .recipes__title h1 {
+.best__recipes-banner .recipes__title h1 {
   width: 305px;
   font-size: 32px;
-  color: #111111;
+  color: var(--text-color);
 }
 
-.wrapper .best__recipes-banner .recipes__title p {
+.best__recipes-banner .recipes__title p {
   margin-top: 10px;
   opacity: 0.7;
   font-size: 18px;
@@ -60,13 +76,15 @@ nav .menu a {
   height: 84px;
 }
 
-.wrapper .best__recipes-banner img {
+.best__recipes-banner img {
   width: 216px;
   height: 300px;
-  position: fixed;
-  margin: 66px 100px 0 624px;
-  top: 103px;
+  position: relative;
+  margin: 0 100px 0 624px;
+  top: -183px;
 }
+
+/* === CARD RECEITAS  === */
 
 .best__recipes {
   margin-top: 50px;
@@ -74,5 +92,130 @@ nav .menu a {
 
 .best__recipes h1 {
   font-size: 24px;
-  color: #111111;
+  color: var(--text-color);
+}
+
+.recipes__content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin-top: 20px;
+  grid-gap: 20px;
+}
+
+.recipes__cards {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-gap: 20px;
+}
+
+.recipes__cards img {
+  width: 300px;
+  border-radius: 15px;
+}
+
+.recipe__info h3 {
+  font-size: 18px;
+  color: var(--text-color);
+  line-height: 21px;
+  margin-bottom: 5px;
+}
+
+.recipe__info p {
+  font-size: 14px;
+  color: #777777;
+}
+
+/* === SOBRE FOODFY  === */
+
+.articles p {
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+  margin-top: 20px;
+}
+
+.how__started,
+.our__recipes {
+  margin-top: 30px;
+}
+
+/* === RECEITAS === */
+
+.recipes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  margin-top: 20px;
+  grid-gap: 20px;
+}
+
+.recipes .recipes__cards {
+  cursor: pointer;
+}
+
+/* === MODAL === */
+
+.modal-overlay {
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal {
+  background-color: white;
+  width: 660px;
+  height: 413px;
+  margin: 28vh auto;
+  position: relative;
+  border-radius: 16px;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 20px;
+  text-align: center;
+}
+
+.modal_image-container {
+  padding: 30px;
+}
+
+.modal_image-container img {
+  border-radius: 15px;
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.close_modal p {
+  font-size: 16px;
+  color: #999999;
+  cursor: pointer;
+}
+
+/* === MODAL.ACTIVE === */
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* === FOOTER === */
+
+.footer {
+  height: 62px;
+  background-color: var(--color-footer);
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  bottom: 0;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.footer p {
+  font-size: 14px;
+  color: #999999;
 }
