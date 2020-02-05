@@ -1,0 +1,115 @@
+{% extends "layout.html" %}
+
+{% block head %}
+  <title>Portfolio - Vinícius Avansini</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"/>
+{% endblock %}
+
+{% block content %}
+
+  <div id="wrapper">
+    <h1>Aulas</h1>
+  </div>
+
+  <section class="cards">
+    <div class="card" id="HN1UjzRSdBk">
+      <div class="card__image-container">
+        <img src="https://img.youtube.com/vi/HN1UjzRSdBk/maxresdefault.jpg" alt="Vídeo aula"/>
+      </div>
+      <div class="card__content">
+        <p>Desvendando o CSS Grid na prática</p>
+      </div>
+      <div class="card__info">
+        <p>36 min</p>
+        <p class="card__price">Free</p>
+      </div>
+    </div>
+
+    <div class="card" id="L0zuZYh800Q">
+      <div class="card__image-container">
+        <img src="https://img.youtube.com/vi/L0zuZYh800Q/maxresdefault.jpg" alt="Vídeo aula"/>
+      </div>
+      <div class="card__content">
+        <p>
+          Podcast FalaDev #12 - Boas práticas no front-end, técnicas e estratégias
+        </p>
+      </div>
+      <div class="card__info">
+        <p>38 min</p>
+        <p class="card__price">Free</p>
+      </div>
+    </div>
+
+    <div class="card" id="ngVU74daJ8Y">
+      <div class="card__image-container">
+        <img src="https://img.youtube.com/vi/ngVU74daJ8Y/maxresdefault.jpg" alt="Vídeo aula"/>
+      </div>
+      <div class="card__content">
+        <p>
+          Code/Drops #16 - Tema light/dark com React, Styled Components e TypeScript
+        </p>
+      </div>
+      <div class="card__info">
+        <p>34 min</p>
+        <p class="card__price">Free</p>
+      </div>
+    </div>
+
+    <div class="card" id="3tB0uDliS6Y">
+      <div class="card__image-container">
+        <img src="https://img.youtube.com/vi/3tB0uDliS6Y/maxresdefault.jpg" alt="Vídeo aula"/>
+      </div>
+      <div class="card__content">
+        <p>Masterclass #05 - Masterizando o Insomnia</p>
+      </div>
+      <div class="card__info">
+        <p>35 min</p>
+        <p class="card__price">Free</p>
+      </div>
+    </div>
+
+    <div class="card" id="QfcozcbDhNM">
+      <div class="card__image-container">
+        <img src="https://img.youtube.com/vi/QfcozcbDhNM/maxresdefault.jpg" alt="Vídeo aula"/>
+      </div>
+      <div class="card__content">
+        <p>
+          Podcast FalaDev #11 - Técnicas de estudo e aprendizado tradicional/p>
+        </p>
+      </div>
+
+      <div class="card__info">
+        <p>44 min</p>
+        <p class="card__price">Free</p>
+      </div>
+    </div>
+
+    <div class="card" id="py6vHgL6saw">
+      <div class="card__image-container">
+        <img src="https://img.youtube.com/vi/py6vHgL6saw/maxresdefault.jpg" alt="Vídeo aula"/>
+      </div>
+      <div class="card__content">
+        <p>Podcast FalaDev #10 - Testes no back-end, TDD e estratégias</p>
+      </div>
+      <div class="card__info">
+        <p>42 min</p>
+        <p class="card__price">Free</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <a class="close-modal">
+        <i class="material-icons">close</i>
+      </a>
+
+      <div class="modal-content">
+        <iframe frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+
+{% endblock %}
