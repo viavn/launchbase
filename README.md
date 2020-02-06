@@ -24,6 +24,10 @@
 - [x] [Página de cursos e iframe](./modulo-02/desafios/02-3-pagina-cursos-e-iframe.md)
 - [x] [Foodfy](./modulo-02/desafios/01-foodfy.md)
 
+## 🚀 Desafios Módulo 3
+
+- [ ] [Primeiro servidor](./modulo-03/desafios/03-1-primeiro-servidor.md)
+
 ## 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
