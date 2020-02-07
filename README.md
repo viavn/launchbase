@@ -26,7 +26,7 @@
 
 ## 🚀 Desafios Módulo 3
 
-- [ ] [Primeiro servidor](./modulo-03/desafios/03-1-primeiro-servidor.md)
+- [x] [Primeiro servidor](./modulo-03/desafios/03-1-primeiro-servidor.md)
 
 ## 📝 Licença
 

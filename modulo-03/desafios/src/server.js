@@ -3,10 +3,9 @@ const nunjucks = require('nunjucks')
 
 const server = express()
 
-const port = 5000
+const port = 5002
 
 server.use(express.static('public'))
-
 server.set('view engine', 'njk')
 
 nunjucks.configure('views', {
@@ -14,11 +13,15 @@ nunjucks.configure('views', {
 })
 
 server.get('/', (req, res) => {
+  return res.render('courses')
+})
+
+server.get('/about', (req, res) => {
   return res.render('about')
 })
 
-server.get('/portfolio', (req, res) => {
-  return res.render('portfolio')
+server.use((req, res) => {
+  res.status(404).render('not-found')
 })
 
 server.listen(port, () => {
