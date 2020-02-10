@@ -11,44 +11,20 @@
   </div>
 
   <section class="cards">
-    <div class="card" id="starter">
-      <div class="card__title">
-        <h1>Starter</h1>
+    {% for course in courses %}
+      <div class="card" id="{{ course.id }}">
+        <div class="card__title">
+          <h1>{{ course.name }}</h1>
+        </div>
+        <div class="card__image-container">
+          <img src="/assets/{{course.img}}" alt="Imagem do curso {{ course.name }}"/>
+        </div>
+        <div class="card__info">
+          <p>{{ course.modulesQtt }}</p>
+          <p class="card__price">{{ course.price }}</p>
+        </div>
       </div>
-      <div class="card__image-container">
-        <img src="/assets/starter.svg" alt="Curso Starter"/>
-      </div>
-      <div class="card__info">
-        <p>Módulos: 4</p>
-        <p class="card__price">Gratuito</p>
-      </div>
-    </div>
-
-    <div class="card" id="launchbase">
-      <div class="card__title">
-        <h1>LaunchBase</h1>
-      </div>
-      <div class="card__image-container">
-        <img src="/assets/launchbase.svg" alt="Curso LaunchBase"/>
-      </div>
-      <div class="card__info">
-        <p>Módulos: 4</p>
-        <p class="card__price">Pago</p>
-      </div>
-    </div>
-
-    <div class="card" id="gostack">
-      <div class="card__title">
-        <h1>GoStack</h1>
-      </div>
-      <div class="card__image-container">
-        <img src="/assets/gostack.svg" alt="Curso GoStack"/>
-      </div>
-      <div class="card__info">
-        <p>Módulos: 4</p>
-        <p class="card__price">Pago</p>
-      </div>
-    </div>
+    {% endfor %}
   </section>
 
   <div class="modal-overlay">

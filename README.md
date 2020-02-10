@@ -27,6 +27,7 @@
 ## 🚀 Desafios Módulo 3
 
 - [x] [Primeiro servidor](./modulo-03/desafios/03-1-primeiro-servidor.md)
+- [x] [Arquivos nunjucks e dados dinâmicos](./modulo-03/desafios/03-2-nunjucks-e-dados-dinamicos.md)
 
 ## 📝 Licença
 

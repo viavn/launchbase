@@ -3,7 +3,8 @@ module.exports = [
     id: 'HN1UjzRSdBk',
     title: 'Desvendando o CSS Grid na prática',
     duration: '36 min',
-    price: 'Free'
+    price: 'Free',
+    featured: true
   },
   {
     id: 'L0zuZYh800Q',
@@ -23,7 +24,8 @@ module.exports = [
     id: '3tB0uDliS6Y',
     title: 'Masterclass #05 - Masterizando o Insomnia',
     duration: '35 min',
-    price: 'Free'
+    price: 'Free',
+    featured: true
   },
   {
     id: 'QfcozcbDhNM',
@@ -35,6 +37,7 @@ module.exports = [
     id: 'py6vHgL6saw',
     title: 'Podcast FalaDev #10 - Testes no back-end, TDD e estratégias',
     duration: '42 min',
-    price: 'Free'
+    price: 'Free',
+    featured: true
   }
 ]
