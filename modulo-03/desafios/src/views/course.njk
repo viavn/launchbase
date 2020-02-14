@@ -1,0 +1,26 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+    <title>Curso -
+        {{ course.name }}</title>
+{% endblock %}
+
+{% block content %}
+    <div id="wrapper">
+        <h1>Curso
+            {{ course.name }}
+        </h1>
+    </div>
+
+    <section class="course">
+        <div class="card" id="{{ course.id }}">
+            <div class="card__info">
+                <p>{{ course.modulesQtt }}</p>
+                <p class="card__price">{{ course.price }}</p>
+            </div>
+            <div class="card__video-container">
+                <iframe src="https://rocketseat.com.br/{{course.id}}" frameborder="0"></iframe>
+            </div>
+        </div>
+    </section>
+{% endblock %}

@@ -35,6 +35,14 @@ server.get('/about', (req, res) => {
   return res.render('about', { about })
 })
 
+server.get('/courses/:id', (req, res) => {
+  const id = req.params.id
+  const course = courses.find(c => c.id === id)
+
+  if (course) return res.render('course', { course })
+  else return res.render('not-found')
+})
+
 server.use((req, res) => {
   res.status(404).render('not-found')
 })

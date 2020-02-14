@@ -1,4 +1,4 @@
-const modalOverlay = document.querySelector('.modal-overlay')
+// const modalOverlay = document.querySelector('.modal-overlay')
 const cards = document.querySelectorAll('.card')
 
 for (const card of cards) {

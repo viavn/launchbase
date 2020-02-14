@@ -28,6 +28,7 @@
 
 - [x] [Primeiro servidor](./modulo-03/desafios/03-1-primeiro-servidor.md)
 - [x] [Arquivos nunjucks e dados dinâmicos](./modulo-03/desafios/03-2-nunjucks-e-dados-dinamicos.md)
+- [x] [Página de descrição do curso](./modulo-03/desafios/03-3-pagina-descricao-curso.md)
 
 ## 📝 Licença
 
