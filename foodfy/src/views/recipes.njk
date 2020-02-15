@@ -1,0 +1,29 @@
+{% extends "_layout.njk" %}
+
+{% block head %}
+    <title>Foodfy | Receitas</title>
+{% endblock head %}
+
+{% block content %}
+    <div class="wrapper">
+        <div class="recipes">
+            {% for recipe in recipies %}
+                <div class="recipes__cards" id="{{ loop.index - 1 }}">
+                    <img src="{{ recipe.image }}" alt="Imagem da receita {{ recipe.title }}">
+                    <div class="recipe__info">
+                        <h3>{{ recipe.title }}</h3>
+                        <p>{{ recipe.author }}</p>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="/scripts.js"></script>
+    <script>
+        setActiveMenu('.recipes-menu')
+        addListener()
+    </script>
+{% endblock scripts %}

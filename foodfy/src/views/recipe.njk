@@ -1,0 +1,70 @@
+{% extends "_layout.njk" %}
+
+{% block head %}
+    <title>Receita
+        {{ recipe.title }}</title>
+{% endblock head %}
+
+{% block content %}
+    <div class="wrapper">
+        <div class="recipe__banner">
+            <img src="{{ recipe.image }}" alt="Imagem da receita {{ recipe.title }}">
+        </div>
+
+        <div class="recipe__information">
+            <h1>{{ recipe.title }}</h3>
+            <p>{{ recipe.author }}</p>
+        </div>
+
+        <div class="recipe__content">
+            <div class="recipe_grid">
+                <div class="recipe_grid--header">
+                    <h3>Ingredientes</h3>
+                    <a class="ingredient__toggle" onclick="toggleDiv(this)">ESCONDER</a>
+                </div>
+
+                <div class="ingridients">
+                    <ul>
+                        {% for ingridient in recipe.ingredients %}
+                            <li>{{ ingridient }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="recipe_grid">
+                <div class="recipe_grid--header">
+                    <h3>Modo de preparo</h3>
+                    <a class="how_to__toggle" onclick="toggleDiv(this)">ESCONDER</a>
+                </div>
+
+                <div class="preparation__steps">
+                    <ol>
+                        {% for prep in recipe.preparation %}
+                            <li>{{ prep }}</li>
+                        {% endfor %}
+                    </ol>
+                </div>
+            </div>
+
+            <div class="recipe_grid">
+                <div class="recipe_grid--header">
+                    <h3>Informações adicionais</h3>
+                    <a class="ingredient_info__toggle" onclick="toggleDiv(this)">ESCONDER</a>
+                </div>
+
+                <div class="more__info">
+                    {% if recipe.information.length > 0 %}
+                        <p>{{ recipe.information }}</p>
+                    {% else %}
+                        <p>Nenhuma informação adicional</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
+
+{% block scripts %}
+    <script src="/scripts.js"></script>
+{% endblock scripts %}
