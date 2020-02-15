@@ -31,6 +31,9 @@
 - [x] [Página de descrição do curso](./modulo-03/desafios/03-3-pagina-descricao-curso.md)
 - [x] [Refatorando Foodfy](./modulo-03/desafios/03-refatorando-foodfy.md)
 
+## 🚀 Desafios Módulo 4
+- [x] [Header](./modulo-04/desafio/04-1-header.md)
+
 ## 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
