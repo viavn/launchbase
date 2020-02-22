@@ -1,0 +1,13 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "name": "José",
+      "avatar_url": "https://source.unsplash.com/collection/3465564/500x500",
+      "birth": 958780800000,
+      "gender": "M",
+      "services": "Musculação, alimentação",
+      "created_at": 1582396779960
+    }
+  ]
+}
