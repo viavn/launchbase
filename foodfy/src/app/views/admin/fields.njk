@@ -1,0 +1,47 @@
+<div class="item">
+    <div class="label-container">
+        <label for="image">Imagem da receita</label>
+    </div>
+    <div class="input-container">
+        <input type="url" id="image" name="image" value="{{ recipe.image }}">
+    </div>
+</div>
+
+<div class="item">
+    <div class="label-container">
+        <label>Ingredientes</label>
+    </div>
+    <div id="ingredients">
+        {% for ingredient in recipe.ingredients %}
+            <div class="input-container mutiple ingredient">
+                <input type="text" name="ingredients[]" value="{{ ingredient }}">
+            </div>
+        {% endfor %}
+    </div>
+    <button type="button" class="btn-mutiple add-ingredient">Adicionar novo ingrediente</button>
+</div>
+
+<div class="item">
+    <div class="label-container">
+        <label>Modo de preparo</label>
+    </div>
+    <div id="preparations">
+        {% for step in recipe.preparation %}
+            <div class="input-container mutiple preparation">
+                <input type="text" name="preparation[]" value="{{ step }}">
+            </div>
+        {% endfor %}
+    </div>
+    <button type="button" class="btn-mutiple add-preparation">Adicionar novo passo</button>
+</div>
+
+<div class="item">
+    <div class="label-container">
+        <label for="information">Informações adicionais</label>
+    </div>
+    <div class="input-container">
+        <textarea id="information" name="information">{{ recipe.information }}</textarea>
+    </div>
+</div>
+
+{% include './add-mutiple-inputs-script.njk' %}

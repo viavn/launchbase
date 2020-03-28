@@ -1,0 +1,20 @@
+{% extends "_layout-admin.njk" %}
+
+{% block content %}
+    <p class="title">Gerenciar Receitas</p>
+
+    <div class="recipes-grid">
+        
+        {% for recipe in recipes %}
+            <div class="recipe">
+                <section style="background: url({{ recipe.image }}) no-repeat center center / cover"></section>
+                <div class="recipe-info">
+                    <p>{{ recipe.title }}</p>
+                    <p>{{ recipe.author }}</p>
+                    <a href="/admin/recipes/{{ recipe.id }}">Visualizar</a>
+                </div>
+            </div>
+        {% endfor %}
+
+    </div>
+{% endblock %}

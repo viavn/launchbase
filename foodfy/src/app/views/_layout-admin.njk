@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        {% block head %}
+            <title>Foodfy</title>
+        {% endblock %}
+
+        <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" href="/style-admin.css"/>
+    </head>
+
+    <body>
+        <nav>
+            <a href="/admin/recipes"><img src="/assets/logo_white.png" alt="Logo Foodfy"></a>
+        </nav>
+
+        <div class="content-container">
+            {% block content %}{% endblock %}
+        </div>
+
+        {% block scripts %}{% endblock scripts %}
+    </body>
+</html>

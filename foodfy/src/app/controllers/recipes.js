@@ -1,6 +1,10 @@
+const Recipes = require('../models/Recipe')
+
 module.exports = {
   index(req, res) {
-    res.send('index')
+    Recipes.all(function (recipes) {
+      return res.render('admin/index', { recipes })
+    })
   },
   create(req, res) {
     res.send('create')
@@ -9,15 +13,31 @@ module.exports = {
     res.send('post')
   },
   show(req, res) {
-    res.send('show')
+    const { id } = req.params
+
+    Recipes.find(id, function (recipe) {
+      if (!recipe) {
+        res.redirect('/not-found')
+      } else {
+        res.render('admin/show', { recipe })
+      }
+    })
   },
   edit(req, res) {
-    res.send('edit')
+    const { id } = req.params
+
+    Recipes.find(id, function (recipe) {
+      if (!recipe) {
+        res.redirect('/not-found')
+      } else {
+        res.render('admin/edit', { recipe })
+      }
+    })
   },
   put(req, res) {
-    res.send('put')
+    res.send(req.body)
   },
-  delete(req, res) {
-    res.send('delete')
+  delete(req, res) {    
+    res.send(`delete: ${req.body}`)
   }
 }
