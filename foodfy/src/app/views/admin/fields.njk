@@ -9,6 +9,24 @@
 
 <div class="item">
     <div class="label-container">
+        <label for="title">Nome da receita</label>
+    </div>
+    <div class="input-container">
+        <input type="text" id="title" name="title" value="{{ recipe.title }}">
+    </div>
+</div>
+
+<div class="item">
+    <div class="label-container">
+        <label for="author">Autor da receita</label>
+    </div>
+    <div class="input-container">
+        <input type="text" id="author" name="author" value="{{ recipe.author }}">
+    </div>
+</div>
+
+<div class="item">
+    <div class="label-container">
         <label>Ingredientes</label>
     </div>
     <div id="ingredients">

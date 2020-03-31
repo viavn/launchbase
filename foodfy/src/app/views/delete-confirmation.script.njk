@@ -6,4 +6,18 @@
             event.preventDefault()
         }
     })*/
+
+    document
+        .querySelector('.btn-delete')
+        .addEventListener('click', function (event) {
+
+            const confirmation = confirm('Deseja excluir?')
+            if (!confirmation) {
+                event.preventDefault()
+            } else {
+                document
+                    .querySelector('#form-delete')
+                    .submit()
+            }
+        })
 </script>

@@ -35,9 +35,22 @@ module.exports = {
     })
   },
   put(req, res) {
-    res.send(req.body)
+    const keys = Object.keys(req.body)
+
+    for (key of keys) {
+      if (req.body[key] == '')
+        return res.send('Please, fill all fields!')
+    }
+
+    Recipes.update(req.body, function (id) {
+      return res.redirect(`/admin/recipes/${id}`)
+    })
   },
-  delete(req, res) {    
-    res.send(`delete: ${req.body}`)
+  delete(req, res) {
+    const id = Number(req.body.id)
+
+    Recipes.delete(id, function () {
+      return res.redirect('/admin/recipes')
+    })
   }
 }
