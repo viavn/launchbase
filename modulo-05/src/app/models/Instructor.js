@@ -113,12 +113,13 @@ module.exports = {
       `
     }
 
-    let query = `
+     query = `
      SELECT a.*,
             COUNT(b.Id) AS Total_Students,
             ${totalQuery}
        FROM Instructor       a
             LEFT JOIN Member b ON (a.Id = b.Instructor_Id)
+      ${filterQuery}
       GROUP BY a.Id
       LIMIT $1 OFFSET $2
     `
