@@ -104,17 +104,15 @@ module.exports = {
       totalQuery = '(SELECT COUNT(*) FROM Member) AS Total'
 
     if (filter) {
-      filterQuery = `${query}
-        WHERE a.Name ILIKE = '%${filter}%'
-           OR a.Email ILIKE = '%${filter}%'
-      `
+      filterQuery = `WHERE a.Name ILIKE '%${filter}%'
+                        OR a.Email ILIKE '%${filter}%'`
 
       totalQuery = `
-        (SELECT COUNT(*) FROM Member ${filterQuery}) AS Total
+        (SELECT COUNT(*) FROM Member a ${filterQuery}) AS Total
       `
     }
 
-     query = `
+    query = `
      SELECT a.*,
             ${totalQuery}
        FROM Member  a
