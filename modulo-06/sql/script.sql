@@ -13,15 +13,15 @@ CREATE TABLE "Product" (
   "Product_Status" int DEFAULT 1,
   "Product_Created_At" timestamp DEFAULT (now()),
   "Product_Updated_At" timestamp DEFAULT (now()),
-  "Category_Id" int UNIQUE,
-  "User_Id" int UNIQUE
+  "Category_Id" int,
+  "User_Id" int
 );
 
 CREATE TABLE "File" (
   "File_Id" SERIAL PRIMARY KEY,
   "File_Name" text not null,
   "File_Path" text not null,
-  "Product_Id" int UNIQUE
+  "Product_Id" int
 );
 
 ALTER TABLE "Product" ADD FOREIGN KEY ("Category_Id") REFERENCES "Category" ("Category_Id");
