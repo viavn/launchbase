@@ -103,17 +103,15 @@ module.exports = {
       totalQuery = '(SELECT COUNT(*) FROM Instructor) AS Total'
 
     if (filter) {
-      filterQuery = `${query}
-        WHERE a.Name ILIKE = '%${filter}%'
-           OR a.Services ILIKE = '%${filter}%'
-      `
+      filterQuery = `WHERE a.Name ILIKE '%${filter}%'
+                        OR a.Services ILIKE '%${filter}%'`
 
       totalQuery = `
-        (SELECT COUNT(*) FROM Instructor ${filterQuery}) AS Total
+        (SELECT COUNT(*) FROM Instructor a ${filterQuery}) AS Total
       `
     }
 
-     query = `
+    query = `
      SELECT a.*,
             COUNT(b.Id) AS Total_Students,
             ${totalQuery}

@@ -25,7 +25,7 @@ module.exports = {
       }
     }
 
-    Instructor.paginate(params)
+    Member.paginate(params)
 
   },
   show(req, res) {
