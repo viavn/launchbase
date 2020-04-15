@@ -34,6 +34,9 @@
 ## 🚀 Desafios Módulo 4
 - [x] [Header](./modulo-04/desafio/04-1-header.md)
 
+## 🚀 Desafios Módulo 6
+- [Parcialmente concluído] [Mini desafios](./modulo-06/desafio/06-1-mini-desafios.md)
+
 ## 📝 Licença
 
 Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
